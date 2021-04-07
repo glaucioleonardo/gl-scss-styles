@@ -1,0 +1,36 @@
+{
+  "name": "gl-scss-styles",
+  "version": "1.0.0",
+  "description": "Common styles to be used on web applications.",
+  "assets": "assets",
+  "main": "assets/style",
+  "files": [
+    "assets/*"
+  ],
+  "scripts": {
+    "build": "copyfiles -a -u2 src/assets/style/** assets",
+    "clean": "shx rm -rf assets",
+    "production": "npm run clean && npm run build && clean-publish --without-publish",
+    "publish": "npm run production && clean-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glaucioleonardo/gl-scss-styles.git"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "web-styles",
+    "ng-styles",
+    "angular styles"
+  ],
+  "author": "Gláucio Leonardo Sant'ana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glaucioleonardo/gl-scss-styles/issues"
+  },
+  "homepage": "https://github.com/glaucioleonardo/gl-scss-styles#readme",
+  "devDependencies": {
+    "clean-publish": "^2.1.1"
+  }
+}
