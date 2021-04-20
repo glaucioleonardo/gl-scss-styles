@@ -10,8 +10,8 @@
   "scripts": {
     "build": "copyfiles -a -u2 src/assets/style/** assets",
     "clean": "shx rm -rf assets",
-    "production": "npm run clean && npm run build && clean-publish --without-publish",
-    "publish": "npm run production && clean-publish"
+    "production": "npm run clean && npm run build",
+    "publish": "npm run production && npm publish"
   },
   "repository": {
     "type": "git",
@@ -29,8 +29,5 @@
   "bugs": {
     "url": "https://github.com/glaucioleonardo/gl-scss-styles/issues"
   },
-  "homepage": "https://github.com/glaucioleonardo/gl-scss-styles#readme",
-  "devDependencies": {
-    "clean-publish": "^2.1.1"
-  }
+  "homepage": "https://github.com/glaucioleonardo/gl-scss-styles#readme"
 }
