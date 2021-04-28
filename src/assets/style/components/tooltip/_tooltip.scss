@@ -1,5 +1,5 @@
-@import "../../colors/gray";
-@import "../../colors/white";
+@import "../../colors/gray/gray-dark";
+@import "../../colors/white/white";
 
 @mixin tooltip($position: 'top') {
     z-index: 1000;

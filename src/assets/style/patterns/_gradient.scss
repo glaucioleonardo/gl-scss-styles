@@ -1,17 +1,17 @@
 @import "../colors/gradient";
-@import "../colors/pink";
+@import "../colors/pink/pink-soft";
 
 @mixin pattern-gradient-border($border-size: 1px, $border: 'top') {
   @if($border == 'top') {
-    border-top: $border-size solid $smooth-pink;
+    border-top: $border-size solid $smooth-pink-1;
   } @else if($border == 'left') {
-    border-left: $border-size solid $smooth-pink;
+    border-left: $border-size solid $smooth-pink-1;
   } @else if($border == 'right') {
-    border-right: $border-size solid $smooth-pink;
+    border-right: $border-size solid $smooth-pink-1;
   } @else if($border == 'bottom') {
-    border-bottom: $border-size solid $smooth-pink;
+    border-bottom: $border-size solid $smooth-pink-1;
   } @else {
-    border: $border-size solid $smooth-pink;
+    border: $border-size solid $smooth-pink-1;
   }
 
   border-image-source: $standard-gradient;

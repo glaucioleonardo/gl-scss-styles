@@ -1,6 +1,6 @@
 {
   "name": "gl-scss-styles",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Common styles to be used on web applications.",
   "assets": "assets",
   "main": "assets/style",

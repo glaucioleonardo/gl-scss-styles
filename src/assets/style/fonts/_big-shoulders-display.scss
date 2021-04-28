@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap');
 
-$big-shoulders-display-font-family: 'Big Shoulders Display', cursive;
+$big-shoulders-display-font-family: 'Big Shoulders Display', sans-serif;
 
 @mixin font-family-big-shoulders($weight: 'light') {
   font-family: $big-shoulders-display-font-family;

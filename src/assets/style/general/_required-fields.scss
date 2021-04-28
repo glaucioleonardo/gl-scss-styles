@@ -1,5 +1,6 @@
-@import "../colors/pink";
-@import "../colors/white";
+@import "../colors/pink/pink";
+@import "../colors/white/white";
+@import "../colors/white/white-translucid";
 
 @mixin error {
   background-color: rgba($pink, 0.3) !important;
