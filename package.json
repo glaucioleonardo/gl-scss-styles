@@ -1,6 +1,6 @@
 {
   "name": "gl-scss-styles",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Common styles to be used on web applications.",
   "assets": "assets",
   "main": "assets/style",
@@ -8,7 +8,7 @@
     "assets/*"
   ],
   "scripts": {
-    "build": "copyfiles -a -u2 src/assets/style/** assets",
+    "build": "copyfiles -V -a -u2 \"./src/assets/style/**\" assets",
     "clean": "shx rm -rf assets",
     "production": "npm run clean && npm run build",
     "publish": "npm publish"
