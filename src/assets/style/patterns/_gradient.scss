@@ -1,8 +1,8 @@
-@use "../colors/gradient";
-@use "../colors/pink/pink-soft";
+@use "../colors/c-gradient";
+@use "../colors/pink/c-pink-soft";
 
 @mixin pattern-gradient-border($border-size: 1px, $border: 'top') {
-  $color: pink-soft.$d1;
+  $color: c-pink-soft.$d1;
 
   @if($border == 'top') {
     border-top: $border-size solid $color;
@@ -16,7 +16,7 @@
     border: $border-size solid $color;
   }
 
-  border-image-source: gradient.$standard;
+  border-image-source: c-gradient.$standard;
   border-image-slice: 0.5;
 }
 @mixin pattern-gradient-border-multiple($border-top: 1px, $border-right: 1px, $border-bottom: 1px, $border-left: 1px) {
@@ -25,7 +25,7 @@
   border-bottom: $border-bottom solid;
   border-left: $border-left solid;
 
-  border-image-source: gradient.$standard;
+  border-image-source: c-gradient.$standard;
   border-image-slice: 0.5;
 }
 
@@ -44,7 +44,7 @@
       margin-top: -$border-size;
       content: '';
       position: absolute;
-      background: gradient.$standard;
+      background: c-gradient.$standard;
     }
 
   } @else if($border == 'left') {
@@ -59,7 +59,7 @@
       top: 0;
       content: '';
       position: absolute;
-      background: gradient.$standard-180;
+      background: c-gradient.$standard-180;
     }
 
   } @else if($border == 'right') {
@@ -74,7 +74,7 @@
       top: 0;
       content: '';
       position: absolute;
-      background: gradient.$standard;
+      background: c-gradient.$standard;
     }
 
   } @else if($border == 'bottom') {
@@ -89,7 +89,7 @@
       margin-bottom: -$border-size;
       content: '';
       position: absolute;
-      background: gradient.$standard;
+      background: c-gradient.$standard;
     }
   }
 }

@@ -1,4 +1,4 @@
-@use "../../colors/gray/gray-dark";
+@use "../../colors/gray/c-gray-dark";
 
 @mixin _scroll($color) {
   background-color: transparent !important;
@@ -20,17 +20,17 @@
     width: 0.6em;
   }
   &::-webkit-scrollbar-button {
-    background-color: gray-dark.$d2;
+    background-color: c-gray-dark.$d2;
     display: none !important;
   }
   &::-webkit-scrollbar-track-piece {
-    @include _scroll(#{gray-dark.$d2-3});
+    @include _scroll(#{c-gray-dark.$d2-3});
   }
   &::-webkit-scrollbar-thumb {
-    @include _scroll(#{gray-dark.$d1-8});
+    @include _scroll(#{c-gray-dark.$d1-8});
   }
 
   &::-webkit-scrollbar-corner {
-    background-color: gray-dark.$default !important;
+    background-color: c-gray-dark.$d !important;
   }
 }

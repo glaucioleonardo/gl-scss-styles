@@ -1,17 +1,16 @@
 @use "../../fonts/fonts";
-@use "../../colors/gray/gray-dark";
-@use "../../colors/white/white";
+@use "../../colors/gray/c-gray-dark";
 
 %item-content {
   @include fonts.font-family-custom(regular);
   padding: 0.8em;
   border: none;
-  background-color: gray-dark.$d2;
-  color: white.$default;
+  background-color: c-gray-dark.$d2;
+  color: white;
   font-size: 0.45em;
 
   &::placeholder {
-    color: gray-dark.$default;
+    color: c-gray-dark.$d;
   }
 }
 

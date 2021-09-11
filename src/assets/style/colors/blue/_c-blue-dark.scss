@@ -1,0 +1,5 @@
+@use "c-blue";
+
+$dark-blue-1: darken(c-blue.$d, 10%);
+$dark-blue-2: darken(c-blue.$d, 20%);
+$dark-blue-3: darken(c-blue.$d, 30%);

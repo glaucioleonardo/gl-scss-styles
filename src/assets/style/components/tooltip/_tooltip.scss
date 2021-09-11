@@ -1,5 +1,4 @@
-@use "../../colors/gray/gray-dark";
-@use "../../colors/white/white";
+@use "../../colors/gray/c-gray-dark";
 
 @mixin tooltip($position: 'top') {
     z-index: 1000;
@@ -11,7 +10,7 @@
         left: 82%;
         border-width: 0.2em 0.2em 0 0.2em;
         border-style: solid;
-        border-color: white.$default transparent transparent transparent;
+        border-color: white transparent transparent transparent;
         z-index: 100;
 
         @if($position == 'top') {
@@ -35,9 +34,9 @@
     &::after {
         content: attr(tooltip);
         position: absolute;
-        background: white.$default;
+        background: white;
         text-align: center;
-        color: gray-dark.$default;
+        color: c-gray-dark.$d;
         font-weight: 300;
         padding: 0.5em 1em;
         width: max-content;
@@ -139,7 +138,7 @@
         transform: translateX(-137%) translateY(100%) rotate(180deg);
         border-width: 0.2em 0.2em 0 0.2em;
         border-style: solid;
-        border-color: white.$default transparent transparent transparent;
+        border-color: white transparent transparent transparent;
         z-index: 100;
     }
 
@@ -148,9 +147,9 @@
         position: absolute;
         left: 80%;
         transform: translateX(-57%) translateY(124%);
-        background: white.$default;
+        background: white;
         text-align: left;
-        color: gray-dark.$default;
+        color: c-gray-dark.$d;
         font-weight: 600;
         padding: 0.5em 1em;
         width: max-content;

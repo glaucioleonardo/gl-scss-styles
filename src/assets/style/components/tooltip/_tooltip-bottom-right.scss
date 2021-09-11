@@ -1,5 +1,4 @@
-@use "../../colors/gray/gray-dark";
-@use "../../colors/white/white";
+@use "../../colors/gray/c-gray-dark";
 
 .tooltip-menu {
   z-index: 100;
@@ -13,7 +12,7 @@
     transform: translateX(-137%) translateY(100%) rotate(180deg);
     border-width: 0.2em 0.2em 0 0.2em;
     border-style: solid;
-    border-color: white.$default transparent transparent transparent;
+    border-color: white transparent transparent transparent;
     z-index: 100;
   }
 
@@ -22,9 +21,9 @@
     position: absolute;
     left: 50%;
     transform: translateX(-85%) translateY(124%);
-    background: white.$default;
+    background: white;
     text-align: left;
-    color: gray-dark.$default;
+    color: c-gray-dark.$d;
     font-weight: 600;
     padding: 0.5em 1em;
     width: max-content;

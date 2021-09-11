@@ -1,5 +1,5 @@
-@use "../../../colors/black/black-translucid";
-@use "../../../colors/white/white-translucid";
+@use "../../../colors/black/c-black-translucid";
+@use "../../../colors/white/c-white-translucid";
 @use "../input-simple-text";
 
 //noinspection CssInvalidPseudoSelector
@@ -11,17 +11,17 @@
 
   .input-container.light {
     .custom-combobox-input {
-      background-color: black-translucid.$t1 !important;
+      background-color: c-black-translucid.$t1 !important;
 
       &::placeholder {
-        color: white-translucid.$t2 !important;
+        color: c-white-translucid.$t2 !important;
       }
     }
     .custom-combobox-input:-ms-input-placeholder {
-      color: white-translucid.$t2 !important;
+      color: c-white-translucid.$t2 !important;
     }
     a {
-      background-color: black-translucid.$t1 !important;
+      background-color: c-black-translucid.$t1 !important;
     }
   }
 }
