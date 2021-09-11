@@ -1,18 +1,19 @@
-@import "montserrat";
-@import "big-shoulders-display";
+@use "montserrat" as montserrat;
+@use "big-shoulders-display" as big-shoulders;
 
-$default-font-family: $montserrat-font-family;
-$big-shoulders: $big-shoulders-display-font-family;
+$montserrat-font-family: montserrat.$montserrat-font-family;
+$big-shoulders: big-shoulders.$big-shoulders-display-font-family;
 
-@mixin font-family-custom($weight: 'light', $font-family) {
-  font-family: $font-family;
+@mixin font-family-custom($_weight: 'light', $_font-family: $montserrat-font-family) {
+  font-family: $_font-family;
 
-  @if $weight == 'thin'{ font-weight: 100; }
-  @else if $weight == 'light'{ font-weight: 300; }
-  @else if $weight == 'regular'{ font-weight: 400; }
-  @else if $weight == 'medium'{ font-weight: 500; }
-  @else if $weight == 'semi-bold'{ font-weight: 600; }
-  @else if $weight == 'bold'{ font-weight: 700; }
-  @else if $weight == 'extra-bold'{ font-weight: 800; }
-  @else if $weight == 'black'{ font-weight: 900; }
+  @if $_weight == 'thin'{ font-weight: 100; }
+  @else if $_weight == 'extra-light'{ font-weight: 200; }
+  @else if $_weight == 'light'{ font-weight: 300; }
+  @else if $_weight == 'regular'{ font-weight: 400; }
+  @else if $_weight == 'medium'{ font-weight: 500; }
+  @else if $_weight == 'semi-bold'{ font-weight: 600; }
+  @else if $_weight == 'bold'{ font-weight: 700; }
+  @else if $_weight == 'extra-bold'{ font-weight: 800; }
+  @else if $_weight == 'black'{ font-weight: 900; }
 }
