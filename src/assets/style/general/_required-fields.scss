@@ -1,15 +1,15 @@
-@import "../colors/pink/pink";
-@import "../colors/white/white";
-@import "../colors/white/white-translucid";
+@use "../colors/pink/pink";
+@use "../colors/white/white";
+@use "../colors/white/white-translucid";
 
 @mixin error {
-  background-color: rgba($pink, 0.3) !important;
+  background-color: rgba(pink.$pink, 0.3) !important;
   border-color: rgb(230, 73, 73) !important;
-  color: $white !important;
+  color: white.$white !important;
 
 
   &::placeholder {
-    color: $white-translucid-3 !important;
+    color: white-translucid.$white-translucid-3 !important;
   }
   transition: all 0.2s ease-in-out;
 }
