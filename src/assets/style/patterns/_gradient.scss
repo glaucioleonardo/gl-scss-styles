@@ -1,20 +1,20 @@
-@import "../colors/gradient";
-@import "../colors/pink/pink-soft";
+@use "../colors/gradient";
+@use "../colors/pink/pink-soft";
 
 @mixin pattern-gradient-border($border-size: 1px, $border: 'top') {
   @if($border == 'top') {
-    border-top: $border-size solid $smooth-pink-1;
+    border-top: $border-size solid pink-soft.$smooth-pink-1;
   } @else if($border == 'left') {
-    border-left: $border-size solid $smooth-pink-1;
+    border-left: $border-size solid pink-soft.$smooth-pink-1;
   } @else if($border == 'right') {
-    border-right: $border-size solid $smooth-pink-1;
+    border-right: $border-size solid pink-soft.$smooth-pink-1;
   } @else if($border == 'bottom') {
-    border-bottom: $border-size solid $smooth-pink-1;
+    border-bottom: $border-size solid pink-soft.$smooth-pink-1;
   } @else {
-    border: $border-size solid $smooth-pink-1;
+    border: $border-size solid pink-soft.$smooth-pink-1;
   }
 
-  border-image-source: $standard-gradient;
+  border-image-source: gradient.$standard-gradient;
   border-image-slice: 0.5;
 }
 @mixin pattern-gradient-border-multiple($border-top: 1px, $border-right: 1px, $border-bottom: 1px, $border-left: 1px) {
@@ -23,7 +23,7 @@
   border-bottom: $border-bottom solid;
   border-left: $border-left solid;
 
-  border-image-source: $standard-gradient;
+  border-image-source: gradient.$standard-gradient;
   border-image-slice: 0.5;
 }
 
@@ -42,7 +42,7 @@
       margin-top: -$border-size;
       content: '';
       position: absolute;
-      background: $standard-gradient;
+      background: gradient.$standard-gradient;
     }
 
   } @else if($border == 'left') {
@@ -57,7 +57,7 @@
       top: 0;
       content: '';
       position: absolute;
-      background: $standard-gradient-180;
+      background: gradient.$standard-gradient-180;
     }
 
   } @else if($border == 'right') {
@@ -72,7 +72,7 @@
       top: 0;
       content: '';
       position: absolute;
-      background: $standard-gradient;
+      background: gradient.$standard-gradient;
     }
 
   } @else if($border == 'bottom') {
@@ -87,7 +87,7 @@
       margin-bottom: -$border-size;
       content: '';
       position: absolute;
-      background: $standard-gradient;
+      background: gradient.$standard-gradient;
     }
   }
 }
