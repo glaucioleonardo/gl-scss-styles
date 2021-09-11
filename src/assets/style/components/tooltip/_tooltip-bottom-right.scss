@@ -1,5 +1,5 @@
-@import "../../colors/gray/gray-dark";
-@import "../../colors/white/white";
+@use "../../colors/gray/gray-dark";
+@use "../../colors/white/white";
 
 .tooltip-menu {
   z-index: 100;
@@ -13,7 +13,7 @@
     transform: translateX(-137%) translateY(100%) rotate(180deg);
     border-width: 0.2em 0.2em 0 0.2em;
     border-style: solid;
-    border-color: $white transparent transparent transparent;
+    border-color: white.$white transparent transparent transparent;
     z-index: 100;
   }
 
@@ -22,9 +22,9 @@
     position: absolute;
     left: 50%;
     transform: translateX(-85%) translateY(124%);
-    background: $white;
+    background: white.$white;
     text-align: left;
-    color: $dark-gray;
+    color: gray-dark.$dark-gray;
     font-weight: 600;
     padding: 0.5em 1em;
     width: max-content;
@@ -56,11 +56,5 @@
       bottom: -0.11em;
       transition: all 0.1s ease-in-out;
     }
-  }
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
-  :host::ng-deep {
-    display: block;
   }
 }

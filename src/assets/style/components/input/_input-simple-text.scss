@@ -1,17 +1,17 @@
-@import "../../colors/gray/gray-dark";
-@import "../../colors/white/white";
-@import "../../fonts/montserrat";
+@use "../../fonts/fonts";
+@use "../../colors/gray/gray-dark";
+@use "../../colors/white/white";
 
 %item-content {
-  @include font-family(regular);
+  @include fonts.font-family-custom(regular);
   padding: 0.8em;
   border: none;
-  background-color: $dark-gray-2;
-  color: $white;
+  background-color: gray-dark.$dark-gray-2;
+  color: white.$white;
   font-size: 0.45em;
 
   &::placeholder {
-    color: $dark-gray;
+    color: gray-dark.$dark-gray;
   }
 }
 

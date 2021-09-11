@@ -1,7 +1,8 @@
-@import "../../../colors/black/black-translucid";
-@import "../../../colors/white/white-translucid";
-@import "../input-simple-text";
+@use "../../../colors/black/black-translucid";
+@use "../../../colors/white/white-translucid";
+@use "../input-simple-text";
 
+//noinspection CssInvalidPseudoSelector
 :host::ng-deep {
   display: flex;
   flex-direction: column;
@@ -10,17 +11,17 @@
 
   .input-container.light {
     .custom-combobox-input {
-      background-color: $black-translucid-1 !important;
+      background-color: black-translucid.$black-translucid-1 !important;
 
       &::placeholder {
-        color: $white-translucid-2 !important;
+        color: white-translucid.$white-translucid-2 !important;
       }
     }
     .custom-combobox-input:-ms-input-placeholder {
-      color: $white-translucid-2 !important;
+      color: white-translucid.$white-translucid-2 !important;
     }
     a {
-      background-color: $black-translucid-1 !important;
+      background-color: black-translucid.$black-translucid-1 !important;
     }
   }
 }

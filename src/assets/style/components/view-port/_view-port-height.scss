@@ -1,9 +1,6 @@
 $full-height-compat: 100vh;
 $full-height: calc(var(--vh, 1vh) * 100);
 
-$full-width-compat: 100vw;
-$full-width: calc(var(--vw, 1vw) * 100);
-
 @function height($value) {
   $height: calc(var(--vh, 1vh) * #{$value});
   @return $height;

@@ -1,5 +1,5 @@
-@import "../../colors/gray/gray-dark";
-@import "../../colors/white/white";
+@use "../../colors/gray/gray-dark";
+@use "../../colors/white/white";
 
 @mixin tooltip($position: 'top') {
     z-index: 1000;
@@ -11,7 +11,7 @@
         left: 82%;
         border-width: 0.2em 0.2em 0 0.2em;
         border-style: solid;
-        border-color: $white transparent transparent transparent;
+        border-color: white.$white transparent transparent transparent;
         z-index: 100;
 
         @if($position == 'top') {
@@ -35,9 +35,9 @@
     &::after {
         content: attr(tooltip);
         position: absolute;
-        background: $white;
+        background: white.$white;
         text-align: center;
-        color:  $dark-gray;
+        color:  gray-dark.$dark-gray;
         font-weight: 300;
         padding: 0.5em 1em;
         width: max-content;
@@ -139,7 +139,7 @@
         transform: translateX(-137%) translateY(100%) rotate(180deg);
         border-width: 0.2em 0.2em 0 0.2em;
         border-style: solid;
-        border-color: $white transparent transparent transparent;
+        border-color: white.$white transparent transparent transparent;
         z-index: 100;
     }
 
@@ -148,9 +148,9 @@
         position: absolute;
         left: 80%;
         transform: translateX(-57%) translateY(124%);
-        background: $white;
+        background: white.$white;
         text-align: left;
-        color: $dark-gray;
+        color: gray-dark.$dark-gray;
         font-weight: 600;
         padding: 0.5em 1em;
         width: max-content;
@@ -185,29 +185,12 @@
     }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .tooltip-menu {
-        margin: 0 0 0 0.3em;
-        width: 1.5em;
-
-        &::before {
-            transform: translateX(-150%) translateY(100%) rotate(180deg);
-        }
-
-        &::after {
-            font-size: 11.5px;
-            transform: translateX(-55%) translateY(124%);
-        }
-    }
-}
-
 .tooltip.top {
     @include tooltip('top');
 }
 .tooltip.top.center {
   @include tooltip('top-center');
 }
-
 
 .tooltip.top.status-table {
     @include tooltip('top-status-table');
