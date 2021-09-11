@@ -1,31 +1,31 @@
-$dark-gray: #64666c;
+$default: #64666c;
 
-$dark-gray-translucid-9: rgba($dark-gray, 0.9);
+$t9: rgba($default, 0.9);
 
-$dark-gray-alternative: #545454;
+$alternative: #545454;
 
-$dark-gray-1: darken($dark-gray, 10%);
-$dark-gray-1-3: darken($dark-gray, 13%);
-$dark-gray-1-5: darken($dark-gray, 15%);
-$dark-gray-1-8: darken($dark-gray, 18%);
+$d1: darken($default, 10%);
+$d1-3: darken($default, 13%);
+$d1-5: darken($default, 15%);
+$d1-8: darken($default, 18%);
 
-$dark-gray-2: darken($dark-gray, 20%);
-$dark-gray-2-1: darken($dark-gray, 21%);
-$dark-gray-2-2: darken($dark-gray, 22%);
-$dark-gray-2-3: darken($dark-gray, 23%);
-$dark-gray-2-5: darken($dark-gray, 25%);
-$dark-gray-2-6: darken($dark-gray, 26%);
-$dark-gray-2-7: darken($dark-gray, 27%);
+$d2: darken($default, 20%);
+$d2-1: darken($default, 21%);
+$d2-2: darken($default, 22%);
+$d2-3: darken($default, 23%);
+$d2-5: darken($default, 25%);
+$d2-6: darken($default, 26%);
+$d2-7: darken($default, 27%);
 
-$dark-gray-3: darken($dark-gray, 30%);
-$dark-gray-3-2: darken($dark-gray, 32%);
-$dark-gray-3-4: darken($dark-gray, 34%);
-$dark-gray-3-5: darken($dark-gray, 35%);
+$d3: darken($default, 30%);
+$d3-2: darken($default, 32%);
+$d3-4: darken($default, 34%);
+$d3-5: darken($default, 35%);
 
-$dark-gray-4: darken($dark-gray, 40%);
-$dark-gray-5: darken($dark-gray, 50%);
-$dark-gray-6: darken($dark-gray, 60%);
-$dark-gray-7: darken($dark-gray, 70%);
-$dark-gray-8: darken($dark-gray, 80%);
-$dark-gray-9: darken($dark-gray, 90%);
-$dark-gray-10: darken($dark-gray, 100%);
+$d4: darken($default, 40%);
+$d5: darken($default, 50%);
+$d6: darken($default, 60%);
+$d7: darken($default, 70%);
+$d8: darken($default, 80%);
+$d9: darken($default, 90%);
+$d10: darken($default, 100%);

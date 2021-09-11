@@ -11,7 +11,7 @@
         left: 82%;
         border-width: 0.2em 0.2em 0 0.2em;
         border-style: solid;
-        border-color: white.$white transparent transparent transparent;
+        border-color: white.$default transparent transparent transparent;
         z-index: 100;
 
         @if($position == 'top') {
@@ -35,9 +35,9 @@
     &::after {
         content: attr(tooltip);
         position: absolute;
-        background: white.$white;
+        background: white.$default;
         text-align: center;
-        color:  gray-dark.$dark-gray;
+        color: gray-dark.$default;
         font-weight: 300;
         padding: 0.5em 1em;
         width: max-content;
@@ -139,7 +139,7 @@
         transform: translateX(-137%) translateY(100%) rotate(180deg);
         border-width: 0.2em 0.2em 0 0.2em;
         border-style: solid;
-        border-color: white.$white transparent transparent transparent;
+        border-color: white.$default transparent transparent transparent;
         z-index: 100;
     }
 
@@ -148,9 +148,9 @@
         position: absolute;
         left: 80%;
         transform: translateX(-57%) translateY(124%);
-        background: white.$white;
+        background: white.$default;
         text-align: left;
-        color: gray-dark.$dark-gray;
+        color: gray-dark.$default;
         font-weight: 600;
         padding: 0.5em 1em;
         width: max-content;

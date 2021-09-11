@@ -13,7 +13,7 @@
     transform: translateX(-137%) translateY(100%) rotate(180deg);
     border-width: 0.2em 0.2em 0 0.2em;
     border-style: solid;
-    border-color: white.$white transparent transparent transparent;
+    border-color: white.$default transparent transparent transparent;
     z-index: 100;
   }
 
@@ -22,9 +22,9 @@
     position: absolute;
     left: 50%;
     transform: translateX(-85%) translateY(124%);
-    background: white.$white;
+    background: white.$default;
     text-align: left;
-    color: gray-dark.$dark-gray;
+    color: gray-dark.$default;
     font-weight: 600;
     padding: 0.5em 1em;
     width: max-content;

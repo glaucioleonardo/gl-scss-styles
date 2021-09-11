@@ -20,17 +20,17 @@
     width: 0.6em;
   }
   &::-webkit-scrollbar-button {
-    background-color: gray-dark.$dark-gray-2;
+    background-color: gray-dark.$d2;
     display: none !important;
   }
   &::-webkit-scrollbar-track-piece {
-    @include _scroll(#{gray-dark.$dark-gray-2-3});
+    @include _scroll(#{gray-dark.$d2-3});
   }
   &::-webkit-scrollbar-thumb {
-    @include _scroll(#{gray-dark.$dark-gray-1-8});
+    @include _scroll(#{gray-dark.$d1-8});
   }
 
   &::-webkit-scrollbar-corner {
-    background-color: gray-dark.$dark-gray !important;
+    background-color: gray-dark.$default !important;
   }
 }

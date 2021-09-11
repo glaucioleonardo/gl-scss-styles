@@ -6,12 +6,12 @@
   @include fonts.font-family-custom(regular);
   padding: 0.8em;
   border: none;
-  background-color: gray-dark.$dark-gray-2;
-  color: white.$white;
+  background-color: gray-dark.$d2;
+  color: white.$default;
   font-size: 0.45em;
 
   &::placeholder {
-    color: gray-dark.$dark-gray;
+    color: gray-dark.$default;
   }
 }
 
