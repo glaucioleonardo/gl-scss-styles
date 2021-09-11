@@ -1,5 +1,5 @@
-@import "blue";
+@use "blue";
 
-$dark-blue-1: darken($blue, 10%);
-$dark-blue-2: darken($blue, 20%);
-$dark-blue-3: darken($blue, 30%);
+$dark-blue-1: darken(blue.$blue, 10%);
+$dark-blue-2: darken(blue.$blue, 20%);
+$dark-blue-3: darken(blue.$blue, 30%);
