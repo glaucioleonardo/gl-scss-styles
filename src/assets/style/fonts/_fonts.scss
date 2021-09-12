@@ -1,3 +1,4 @@
+@use "google-font";
 @use "montserrat" as montserrat;
 @use "big-shoulders-display" as big-shoulders;
 
@@ -5,15 +6,34 @@ $montserrat-font-family: montserrat.$montserrat-font-family;
 $big-shoulders: big-shoulders.$big-shoulders-display-font-family;
 
 @mixin font-family-custom($_weight: 'light', $_font-family: $montserrat-font-family) {
-  font-family: $_font-family;
+  font-family: $_font-family, sans-serif;
 
-  @if $_weight == 'thin'{ font-weight: 100; }
-  @else if $_weight == 'extra-light'{ font-weight: 200; }
-  @else if $_weight == 'light'{ font-weight: 300; }
-  @else if $_weight == 'regular'{ font-weight: 400; }
-  @else if $_weight == 'medium'{ font-weight: 500; }
-  @else if $_weight == 'semi-bold'{ font-weight: 600; }
-  @else if $_weight == 'bold'{ font-weight: 700; }
-  @else if $_weight == 'extra-bold'{ font-weight: 800; }
-  @else if $_weight == 'black'{ font-weight: 900; }
+  @if $_weight == 'thin'{
+    font-weight: 100;
+    @include google-font.google-font($_font-family, 100);
+  } @else if $_weight == 'extra-light'{
+    font-weight: 200;
+    @include google-font.google-font($_font-family, 200);
+  } @else if $_weight == 'light'{
+    font-weight: 300;
+    @include google-font.google-font($_font-family, 300);
+  } @else if $_weight == 'regular'{
+    font-weight: 400;
+    @include google-font.google-font($_font-family, 400);
+  } @else if $_weight == 'medium'{
+    font-weight: 500;
+    @include google-font.google-font($_font-family, 500);
+  } @else if $_weight == 'semi-bold'{
+    font-weight: 600;
+    @include google-font.google-font($_font-family, 600);
+  } @else if $_weight == 'bold'{
+    font-weight: 700;
+    @include google-font.google-font($_font-family, 700);
+  } @else if $_weight == 'extra-bold'{
+    font-weight: 800;
+    @include google-font.google-font($_font-family, 800);
+  } @else if $_weight == 'black'{
+    font-weight: 900;
+    @include google-font.google-font($_font-family, 900);
+  }
 }
