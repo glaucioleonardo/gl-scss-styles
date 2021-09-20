@@ -81,8 +81,10 @@ $google-font-subsets: (
     //  replace name whitespaces
     $name: if(type-of($name) == string, unquote($name),$name);
     $name: __gf__str-replace(inspect($name),' ','+');
+    //noinspection SassScssUnresolvedVariable
     @if $__gf__combine and not $text {
       //  add weights to combine map
+      //noinspection SassScssUnresolvedVariable
       $wgt: map-get($__gf__map, $name) or ();
       $wgt: __gf__list-unique(join($wgt, $weights, comma));
       $__gf__map: map-merge($__gf__map, ($name: $wgt)) !global;
